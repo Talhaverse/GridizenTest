@@ -18,16 +18,16 @@ const HomeScreen = () => {
   const [newPostTitle, setNewPostTitle] = useState('');
   const [newPostBody, setNewPostBody] = useState('');
 
-  useEffect(() => {
-    // Fetch posts from the API
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then(response => response.json())
-      .then(json => {
-        setPosts(json); // Set fetched posts
-        setIsLoading(false); // Update loading state
-      })
-      .catch(error => console.error(error));
-  }, []);
+  // useEffect(() => {
+  //   // Fetch posts from the API
+  //   fetch('https://jsonplaceholder.typicode.com/posts')
+  //     .then(response => response.json())
+  //     .then(json => {
+  //       setPosts(json); // Set fetched posts
+  //       setIsLoading(false); // Update loading state
+  //     })
+  //     .catch(error => console.error(error));
+  // }, []);
 
   const toggleModal = () => {
     setIsModalVisible(!isModalVisible);

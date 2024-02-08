@@ -59,7 +59,7 @@ const HomeScreen = () => {
           backgroundColor: '#442445',
           alignItems: 'center',
         }}>
-        <Text style={{fontSize: 18, color: 'white'}}>Add Post</Text>
+        <Text style={{fontSize: 18, color: 'white'}}>Add Posts</Text>
       </TouchableOpacity>
 
       <Modal visible={isModalVisible} onRequestClose={toggleModal}>

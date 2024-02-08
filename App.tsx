@@ -34,6 +34,13 @@ const App = () => {
       image:
         'https://fastly.picsum.photos/id/365/200/200.jpg?hmac=1d3GDxGN6ctXX3y8q4PA_hKu6fLOCEGbgeKZKJ8K8U8',
     },
+    {
+      name: 'Blackberry Mobile',
+      color: 'black',
+      price: 10000,
+      image:
+        'https://fastly.picsum.photos/id/365/200/200.jpg?hmac=1d3GDxGN6ctXX3y8q4PA_hKu6fLOCEGbgeKZKJ8K8U8',
+    },
   ];
 
   return (

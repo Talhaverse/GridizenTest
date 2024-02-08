@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{fontSize:30}}>0</Text>
+      <Text style={{fontSize:30,textAlign:'right',padding:10,backgroundColor:'orange'}}>0</Text>
     </SafeAreaView>
   )
 }

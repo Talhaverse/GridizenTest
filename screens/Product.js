@@ -8,7 +8,7 @@ const Product = (props) => {
   return (
     <SafeAreaView style={styles.container}>
 
-<View style={{}}>
+<View style={{alignItems: 'center',borderBottomColor:'orange',borderBottomWidth:2,margin:5,padding:10}}>
             <Text style={{fontSize: 24}}>{item.name}</Text>
             <Text style={{fontSize: 24}}>{item.price}</Text>
             <Text style={{fontSize: 24}}>{item.color}</Text>

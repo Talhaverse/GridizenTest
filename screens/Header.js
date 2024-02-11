@@ -1,19 +1,42 @@
-import { View, Text,StyleSheet,SafeAreaView } from 'react-native'
-import React from 'react'
+import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
+import {useSelector} from 'react-redux';
+import React, {useState, useEffect} from 'react';
 
 const Header = () => {
+  const cartData = useSelector(state => state.reducer);
+  const [cartItems, setCartItems] = useState(0);
+  useEffect(() => {
+    setCartItems(cartData.length);
+  }, [cartData]);
+
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{fontSize:30,textAlign:'right',padding:10,backgroundColor:'orange'}}>0</Text>
+      <Text
+        style={{
+          fontSize: 30,
+          textAlign: 'right',
+          padding: 10,
+          backgroundColor: 'orange',
+        }}>
+        {/* <View
+          style={{
+            backgroundColor: 'yellow',
+            borderRadius: 15,
+            height: 40,
+            width: 40,
+
+          }}> */}
+          <Text style={{fontSize:30}}>{cartItems}</Text>
+        {/* </View> */}
+      </Text>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
-
   container: {
-    // flex:1
-  }
-})
+    //  flex:1
+  },
+});
 
-export default Header
+export default Header;

@@ -11,24 +11,16 @@ const Header = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text
+      <View
         style={{
-          fontSize: 30,
           textAlign: 'right',
           padding: 10,
           backgroundColor: 'orange',
         }}>
-        {/* <View
-          style={{
-            backgroundColor: 'yellow',
-            borderRadius: 15,
-            height: 40,
-            width: 40,
-
-          }}> */}
-          <Text style={{fontSize:30}}>{cartItems}</Text>
-        {/* </View> */}
-      </Text>
+          <View style={{backgroundColor:'yellow',borderRadius:15,height:40,width:40,marginTop:10}}>
+            <Text style={{fontSize:30,textAlign: 'center',}} > {cartItems} </Text> 
+      </View>
+      </View>
     </SafeAreaView>
   );
 };

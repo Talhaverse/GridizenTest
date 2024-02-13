@@ -17,7 +17,7 @@ const Header = () => {
           padding: 10,
           backgroundColor: 'orange',
         }}>
-          <View style={{backgroundColor:'yellow',borderRadius:15,height:40,width:40,marginTop:10}}>
+          <View style={{backgroundColor:'yellow',borderRadius:15,height:40,width:40,marginTop:15}}>
             <Text style={{fontSize:30,textAlign: 'center',}} > {cartItems} </Text> 
       </View>
       </View>

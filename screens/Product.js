@@ -1,16 +1,29 @@
 import { View, Text, SafeAreaView,StyleSheet,Image,Button } from 'react-native'
-import React from 'react'
-import {useDispatch} from 'react-redux'
+import React,{useEffect,useState} from 'react'
+import {useDispatch,useSelector} from 'react-redux'
 import { addToCart } from '../redux/action'
 
-const Product = (props) => {
 
+const Product = (props) => {
+  
   const item = props.item;
   const dispatch = useDispatch();
+  const cartItems = useSelector((state) =>state.reducer)
+  const [isAdded,setIsAdded] = useState(false)
 
    const handleAddToCart = (item) => {
     dispatch(addToCart(item))
    }
+
+   useEffect(()=>{
+    if(cartItems && cartItems.length){
+      cartItems.forEach((element)=>{
+          if(element.name === item.name ){
+            setIsAdded(true)
+          }
+      })
+    }
+   },[cartItems])
 
   return (
     <SafeAreaView style={styles.container}>
@@ -23,7 +36,15 @@ const Product = (props) => {
               style={{width: 100, height: 100,marginBottom:10}}
               source={{uri: item.image}}
             />
-            <Button style={{}} title="Add to Cart" onPress={()=>handleAddToCart(item)} />
+            {
+              isAdded?
+              <Button style={{}} title="Remove From Cart" onPress={()=>handleAddToCart(item)} />
+              :
+              <Button style={{}} title="Add to Cart" onPress={()=>handleAddToCart(item)} />
+
+
+
+            }
 
           </View>
     </SafeAreaView>

@@ -10,8 +10,10 @@ import {
   import React from 'react';
   import Product from './Product';
   import Header from './Header';
+
   
-  const ProductWrapper = () => {
+  
+  const ProductWrapper = ({navigation}) => {
     const products = [
       {
         name: 'Samsung Mobile',
@@ -45,6 +47,7 @@ import {
   
     return (
       <SafeAreaView style={styles.container}>
+        <Button title="Go to User List" onPress={()=>{navigation.navigate('UserList')}}/>
         <Header />
         <ScrollView>
           { 

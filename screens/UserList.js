@@ -4,7 +4,7 @@ import React from 'react'
 const UserList = () => {
   return (
     <SafeAreaView>
-      <Text>UserList</Text>
+      <Text>UserLists from api using saga</Text>
     </SafeAreaView>
   )
 }

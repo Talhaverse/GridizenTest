@@ -4,7 +4,7 @@ import React from 'react'
 const UserList = () => {
   return (
     <SafeAreaView>
-      <Text>UserLists from api using sagqka</Text>
+      <Text>UserLists from api using  redux sagqa</Text>
     </SafeAreaView>
   )
 }

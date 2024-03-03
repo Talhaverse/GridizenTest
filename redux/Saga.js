@@ -2,7 +2,10 @@ import {takeEvery} from 'redux-saga/effects';
 import {USER_LIST} from './constants';
 
 function* userList() {
-  console.warn('saga function is called');
+     const url = 'https://dummyjson.com/users'
+     let data = yield fetch(url)
+     data = yield data.json()
+     console.warn("saga data is ", data)
 }
 
 function* SagaData() {

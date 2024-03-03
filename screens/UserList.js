@@ -16,7 +16,7 @@ const UserList = () => {
 
   return (
     <SafeAreaView>
-      <Text>UserLists from api using  redux sagqa, dont to miss 2 days in a row</Text>
+      <Text>UserLists from api using  redux sagqa</Text>
     </SafeAreaView>
   )
 }

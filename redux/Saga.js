@@ -1,11 +1,11 @@
-import {takeEvery} from 'redux-saga/effects';
-import {USER_LIST} from './constants';
+import {takeEvery,put} from 'redux-saga/effects';
+import {USER_LIST,SET_USER_DATA} from './constants';
 
 function* userList() {
      const url = 'https://dummyjson.com/users'
      let data = yield fetch(url)
      data = yield data.json()
-     console.warn("saga data is ", data)
+     yield put({type:SET_USER_DATA,data})
 }
 
 function* SagaData() {

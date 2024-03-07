@@ -35,12 +35,12 @@ const Product = (props) => {
   return (
     <SafeAreaView style={styles.container}>
 
-<View style={{alignItems: 'center',borderBottomColor:'orange',borderBottomWidth:2,margin:5,padding:10}}>
+<View style={{alignItems: 'center',borderBottomColor:'lightblue',borderBottomWidth:2,margin:5,padding:10}}>
             <Text style={{fontSize: 24}}>{item.name}</Text>
             <Text style={{fontSize: 24}}>{item.price}</Text>
             <Text style={{fontSize: 24}}>{item.color}</Text>
             <Image
-              style={{width: 100, height: 100,marginBottom:10}}
+              style={{width: 100, height: 100,marginBottom:10,borderRadius:20}}
               source={{uri: item.image}}
             />
             {

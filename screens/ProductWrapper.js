@@ -16,32 +16,32 @@ import {
   const ProductWrapper = ({navigation}) => {
     const products = [
       {
-        name: 'Samsung Mobile',
+        name: 'Macbook',
         color: 'white',
         price: 3000,
         image:
-          'https://fastly.picsum.photos/id/365/200/200.jpg?hmac=1d3GDxGN6ctXX3y8q4PA_hKu6fLOCEGbgeKZKJ8K8U8',
+          'https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU',
       },
       {
-        name: 'Apple Mobile',
+        name: 'Ryzen',
         color: 'blue',
         price: 6000,
         image:
-          'https://fastly.picsum.photos/id/365/200/200.jpg?hmac=1d3GDxGN6ctXX3y8q4PA_hKu6fLOCEGbgeKZKJ8K8U8',
+          'https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU',
       },
       {
-        name: 'Oppo Mobile',
+        name: 'Samsung',
         color: 'green',
         price: 1000,
         image:
-          'https://fastly.picsum.photos/id/365/200/200.jpg?hmac=1d3GDxGN6ctXX3y8q4PA_hKu6fLOCEGbgeKZKJ8K8U8',
+          'https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU',
       },
       {
-        name: 'Blackberry Mobile',
+        name: 'Chromebook',
         color: 'black',
         price: 10000,
         image:
-          'https://fastly.picsum.photos/id/365/200/200.jpg?hmac=1d3GDxGN6ctXX3y8q4PA_hKu6fLOCEGbgeKZKJ8K8U8',
+          'https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU',
       },
     ];
   

@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView } from 'react-native'
+import { View, Text, SafeAreaView,FlatList } from 'react-native'
 import {useDispatch,useSelector} from 'react-redux'
 import { getUserList } from '../redux/action'
 import React,{useEffect} from 'react'
@@ -15,14 +15,14 @@ const UserList = () => {
   console.warn('in component',userList);
 
   return (
-    <SafeAreaView>
-      {
-       UserList.length?
-        userList.map((item)=>(<Text style={{fontSize:20}}>{item.gender}</Text>))
-        :<Text>not fetching data</Text>       
-      }
+    <SafeAreaView style={{flex:1}}>
+      <FlatList
+        data={userList[0].users}
+        keyExtractor={item => item.firstName}
+        renderItem={({ item }) => <Text style={{fontSize:25}}>{item.firstName + " " + item.lastName + " " + item.age}</Text>}
+      />
     </SafeAreaView>
   )
-}
+}        
 
 export default UserList

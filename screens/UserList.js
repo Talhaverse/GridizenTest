@@ -16,7 +16,11 @@ const UserList = () => {
 
   return (
     <SafeAreaView>
-      <Text>UserLists from api using  redux sagqa</Text>
+      {
+       UserList.length?
+        userList.map((item)=>(<Text style={{fontSize:20}}>{item.gender}</Text>))
+        :<Text>not fetching data</Text>       
+      }
     </SafeAreaView>
   )
 }

@@ -40,7 +40,7 @@ const Product = (props) => {
             <Text style={{fontSize: 24}}>{item.price}</Text>
             <Text style={{fontSize: 24}}>{item.color}</Text>
             <Image
-              style={{width: 100, height: 100,marginBottom:10,borderRadius:20}}
+              style={{width: 100, height: 100,marginBottom:10,borderRadius:21}}
               source={{uri: item.image}}
             />
             {
